@@ -40,7 +40,13 @@ public class GetAPITest extends TestBase {
 	}
 	
 	
-	
+	public void getTest() throws ClientProtocolException, IOException {
+	    restClient = new RestClient();
+		restClient.get(url);
+		
+		public void getTest() throws ClientProtocolException, IOException {
+		    restClient = new RestClient();
+			restClient.get(url);
 	
 	
 	

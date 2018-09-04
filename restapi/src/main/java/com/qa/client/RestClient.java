@@ -50,11 +50,18 @@ public class RestClient {
 		System.out.println("Header Array--->"+ allHeaders);
 				
 		
+
+		// now how to get header
+		//c. All Headers 
+		Header[] headerArray =closableHttpResponse.getAllHeaders();
+		// now with the help of hasmmap it is easey to put key and value 
+		HashMap<String, String> allHeaders = new HashMap<String, String >();
 		
+		//now i will iterate this array and I will store one by one value in hashmap
 		
-		
-	
-	}
+		for(Header header :headerArray) {
+			allHeaders.put(header.getName(), header.getValue());
+}
 	
 
 }
